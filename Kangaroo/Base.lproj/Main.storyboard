@@ -717,6 +717,8 @@
                         </connections>
                     </splitView>
                     <connections>
+                        <outlet property="detailItem" destination="CRj-mt-8wU" id="ybB-27-rTl"/>
+                        <outlet property="recordListItem" destination="qYS-dS-Fa2" id="208-ti-Ily"/>
                         <outlet property="splitView" destination="Byz-un-Wit" id="hpE-Uz-hX1"/>
                         <segue destination="51d-3B-gu7" kind="relationship" relationship="splitItems" id="qzv-fN-gdr"/>
                         <segue destination="7vi-i3-7iP" kind="relationship" relationship="splitItems" id="NxZ-vf-hUa"/>

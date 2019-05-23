@@ -10,9 +10,26 @@ import Cocoa
 
 class MainSplitViewController: NSSplitViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do view setup here.
+    @IBOutlet weak var recordListItem: NSSplitViewItem!
+    @IBOutlet weak var detailItem: NSSplitViewItem!
+    
+    var recordListVC: RecordListViewController {
+        return recordListItem.viewController as! RecordListViewController
     }
     
+    var detailVC: DetailViewController {
+        return detailItem.viewController as! DetailViewController
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        recordListVC.splitDelegate = self
+    }
+}
+
+extension MainSplitViewController: RecordListViewControllerDelegate {
+    func addRecord() {
+        print("addRecord")
+    }
 }

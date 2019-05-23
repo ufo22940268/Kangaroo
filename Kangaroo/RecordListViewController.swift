@@ -8,6 +8,10 @@
 
 import Cocoa
 
+protocol RecordListViewControllerDelegate: class {
+    func addRecord()
+}
+
 class RecordListViewController: NSViewController {
     
     @IBOutlet weak var tableView: NSTableView! {
@@ -15,7 +19,9 @@ class RecordListViewController: NSViewController {
             tableView.register(NSNib(nibNamed: "RecordCell", bundle: nil), forIdentifier: cellId)
         }
     }
+    
     let cellId = NSUserInterfaceItemIdentifier("cell")
+    weak var splitDelegate: RecordListViewControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,3 +55,4 @@ extension RecordListViewController: NSTableViewDelegate {
         return false
     }
 }
+
