@@ -19,6 +19,10 @@
 		42B99BEA229627500052D99D /* RecordListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B99BE9229627500052D99D /* RecordListViewController.swift */; };
 		42B99BEC2296276A0052D99D /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B99BEB2296276A0052D99D /* Extentions.swift */; };
 		42D20F622296BE4200001C68 /* MainSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D20F612296BE4200001C68 /* MainSplitViewController.swift */; };
+		42D20F642297576500001C68 /* AddRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D20F632297576500001C68 /* AddRecordViewController.swift */; };
+		42D20F662297579D00001C68 /* AddRecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42D20F652297579D00001C68 /* AddRecordViewController.xib */; };
+		42D20F692297581900001C68 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D20F672297581900001C68 /* Test.swift */; };
+		42D20F6A2297581900001C68 /* Test.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42D20F682297581900001C68 /* Test.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,10 @@
 		42B99BE9229627500052D99D /* RecordListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordListViewController.swift; sourceTree = "<group>"; };
 		42B99BEB2296276A0052D99D /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 		42D20F612296BE4200001C68 /* MainSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSplitViewController.swift; sourceTree = "<group>"; };
+		42D20F632297576500001C68 /* AddRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecordViewController.swift; sourceTree = "<group>"; };
+		42D20F652297579D00001C68 /* AddRecordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddRecordViewController.xib; sourceTree = "<group>"; };
+		42D20F672297581900001C68 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		42D20F682297581900001C68 /* Test.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Test.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +128,10 @@
 				4270B69022965D64001BA08B /* RecordCell.xib */,
 				4270B69222965FBC001BA08B /* RecordCell.swift */,
 				42D20F612296BE4200001C68 /* MainSplitViewController.swift */,
+				42D20F632297576500001C68 /* AddRecordViewController.swift */,
+				42D20F652297579D00001C68 /* AddRecordViewController.xib */,
+				42D20F672297581900001C68 /* Test.swift */,
+				42D20F682297581900001C68 /* Test.xib */,
 			);
 			path = Kangaroo;
 			sourceTree = "<group>";
@@ -247,8 +259,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4270B69122965D64001BA08B /* RecordCell.xib in Resources */,
+				42D20F6A2297581900001C68 /* Test.xib in Resources */,
 				42B99BC222957BE60052D99D /* Assets.xcassets in Resources */,
 				42B99BC522957BE60052D99D /* Main.storyboard in Resources */,
+				42D20F662297579D00001C68 /* AddRecordViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,11 +289,13 @@
 			files = (
 				42B99BEC2296276A0052D99D /* Extentions.swift in Sources */,
 				42B99BC022957BE40052D99D /* ViewController.swift in Sources */,
+				42D20F692297581900001C68 /* Test.swift in Sources */,
 				42B99BEA229627500052D99D /* RecordListViewController.swift in Sources */,
 				42D20F622296BE4200001C68 /* MainSplitViewController.swift in Sources */,
 				4270B69522968027001BA08B /* DetailViewController.swift in Sources */,
 				42B99BBE22957BE40052D99D /* AppDelegate.swift in Sources */,
 				4270B69322965FBC001BA08B /* RecordCell.swift in Sources */,
+				42D20F642297576500001C68 /* AddRecordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

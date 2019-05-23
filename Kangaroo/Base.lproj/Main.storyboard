@@ -686,8 +686,8 @@
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
                     <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="600" height="400"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" topStrut="YES"/>
+                        <rect key="contentRect" x="0.0" y="300" width="600" height="400"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
@@ -733,17 +733,17 @@
             <objects>
                 <viewController id="51d-3B-gu7" customClass="RecordListViewController" customModule="Kangaroo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="Cg5-Ja-lFG">
-                        <rect key="frame" x="0.0" y="0.0" width="200" height="436"/>
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="446"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G2j-M6-rfO">
-                                <rect key="frame" x="0.0" y="0.0" width="200" height="436"/>
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="446"/>
                                 <subviews>
-                                    <stackView distribution="fill" orientation="horizontal" alignment="top" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZGH-Ap-VQh">
-                                        <rect key="frame" x="0.0" y="414" width="67" height="22"/>
+                                    <stackView distribution="fill" orientation="horizontal" alignment="centerY" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZGH-Ap-VQh">
+                                        <rect key="frame" x="0.0" y="414" width="67" height="32"/>
                                         <subviews>
                                             <button verticalHuggingPriority="750" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="abq-pe-IKL">
-                                                <rect key="frame" x="10" y="-7" width="47" height="32"/>
+                                                <rect key="frame" x="10" y="-1" width="47" height="32"/>
                                                 <buttonCell key="cell" type="push" bezelStyle="rounded" image="NSAddTemplate" imagePosition="only" alignment="center" state="on" borderStyle="border" inset="2" id="ycS-NM-AXn">
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                     <font key="font" metaFont="system"/>
@@ -753,7 +753,10 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <edgeInsets key="edgeInsets" left="16" right="16" top="4" bottom="4"/>
+                                        <edgeInsets key="edgeInsets" left="16" right="16" top="0.0" bottom="0.0"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="Xrg-DC-uLK"/>
+                                        </constraints>
                                         <visibilityPriorities>
                                             <integer value="1000"/>
                                         </visibilityPriorities>

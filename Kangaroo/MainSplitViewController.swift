@@ -30,6 +30,6 @@ class MainSplitViewController: NSSplitViewController {
 
 extension MainSplitViewController: RecordListViewControllerDelegate {
     func addRecord() {
-        print("addRecord")
+        detailVC.mode = .add
     }
 }

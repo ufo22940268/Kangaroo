@@ -29,7 +29,7 @@ class RecordListViewController: NSViewController {
     }
     
     @IBAction func onAdd(_ sender: NSButton) {
-        print("add")
+        splitDelegate?.addRecord()
     }
 }
 
