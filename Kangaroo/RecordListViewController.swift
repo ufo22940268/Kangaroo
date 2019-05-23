@@ -12,10 +12,10 @@ class RecordListViewController: NSViewController {
     
     @IBOutlet weak var tableView: NSTableView! {
         didSet {
-            tableView.register(NSNib(nibNamed: "RecordCell", bundle: nil), forIdentifier: id)
+            tableView.register(NSNib(nibNamed: "RecordCell", bundle: nil), forIdentifier: cellId)
         }
     }
-    let id =  NSUserInterfaceItemIdentifier("cell")
+    let cellId = NSUserInterfaceItemIdentifier("cell")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +37,7 @@ extension RecordListViewController: NSTableViewDataSource {
 extension RecordListViewController: NSTableViewDelegate {
     
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
-        let view = tableView.makeView(withIdentifier: id, owner: nil) as! RecordCell
+        let view = tableView.makeView(withIdentifier: cellId, owner: nil) as! RecordCell
         view.title.stringValue = "jiji"
         return view
     }
