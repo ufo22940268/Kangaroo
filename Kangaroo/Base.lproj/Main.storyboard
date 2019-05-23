@@ -738,14 +738,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="200" height="436"/>
                                 <subviews>
                                     <stackView distribution="fill" orientation="horizontal" alignment="top" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZGH-Ap-VQh">
-                                        <rect key="frame" x="0.0" y="414" width="72" height="22"/>
+                                        <rect key="frame" x="0.0" y="414" width="67" height="22"/>
                                         <subviews>
                                             <button verticalHuggingPriority="750" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="abq-pe-IKL">
-                                                <rect key="frame" x="16" y="-1" width="40" height="23"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="40" id="QCh-aX-opS"/>
-                                                </constraints>
-                                                <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSAddTemplate" imagePosition="only" alignment="center" state="on" borderStyle="border" inset="2" id="ycS-NM-AXn">
+                                                <rect key="frame" x="10" y="-7" width="47" height="32"/>
+                                                <buttonCell key="cell" type="push" bezelStyle="rounded" image="NSAddTemplate" imagePosition="only" alignment="center" state="on" borderStyle="border" inset="2" id="ycS-NM-AXn">
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                     <font key="font" metaFont="system"/>
                                                 </buttonCell>
