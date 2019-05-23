@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4270B69122965D64001BA08B /* RecordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4270B69022965D64001BA08B /* RecordCell.xib */; };
+		4270B69322965FBC001BA08B /* RecordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4270B69222965FBC001BA08B /* RecordCell.swift */; };
 		42B99BBE22957BE40052D99D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B99BBD22957BE40052D99D /* AppDelegate.swift */; };
 		42B99BC022957BE40052D99D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B99BBF22957BE40052D99D /* ViewController.swift */; };
 		42B99BC222957BE60052D99D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42B99BC122957BE60052D99D /* Assets.xcassets */; };
 		42B99BC522957BE60052D99D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42B99BC322957BE60052D99D /* Main.storyboard */; };
 		42B99BD122957BE60052D99D /* KangarooTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B99BD022957BE60052D99D /* KangarooTests.swift */; };
 		42B99BDC22957BE60052D99D /* KangarooUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B99BDB22957BE60052D99D /* KangarooUITests.swift */; };
+		42B99BEA229627500052D99D /* RecordListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B99BE9229627500052D99D /* RecordListViewController.swift */; };
+		42B99BEC2296276A0052D99D /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B99BEB2296276A0052D99D /* Extentions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4270B69022965D64001BA08B /* RecordCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecordCell.xib; sourceTree = "<group>"; };
+		4270B69222965FBC001BA08B /* RecordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordCell.swift; sourceTree = "<group>"; };
 		42B99BBA22957BE40052D99D /* Kangaroo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kangaroo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42B99BBD22957BE40052D99D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42B99BBF22957BE40052D99D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +52,8 @@
 		42B99BD722957BE60052D99D /* KangarooUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KangarooUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42B99BDB22957BE60052D99D /* KangarooUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KangarooUITests.swift; sourceTree = "<group>"; };
 		42B99BDD22957BE60052D99D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42B99BE9229627500052D99D /* RecordListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordListViewController.swift; sourceTree = "<group>"; };
+		42B99BEB2296276A0052D99D /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +110,10 @@
 				42B99BC322957BE60052D99D /* Main.storyboard */,
 				42B99BC622957BE60052D99D /* Info.plist */,
 				42B99BC722957BE60052D99D /* Kangaroo.entitlements */,
+				42B99BE9229627500052D99D /* RecordListViewController.swift */,
+				42B99BEB2296276A0052D99D /* Extentions.swift */,
+				4270B69022965D64001BA08B /* RecordCell.xib */,
+				4270B69222965FBC001BA08B /* RecordCell.swift */,
 			);
 			path = Kangaroo;
 			sourceTree = "<group>";
@@ -228,6 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4270B69122965D64001BA08B /* RecordCell.xib in Resources */,
 				42B99BC222957BE60052D99D /* Assets.xcassets in Resources */,
 				42B99BC522957BE60052D99D /* Main.storyboard in Resources */,
 			);
@@ -254,8 +267,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42B99BEC2296276A0052D99D /* Extentions.swift in Sources */,
 				42B99BC022957BE40052D99D /* ViewController.swift in Sources */,
+				42B99BEA229627500052D99D /* RecordListViewController.swift in Sources */,
 				42B99BBE22957BE40052D99D /* AppDelegate.swift in Sources */,
+				4270B69322965FBC001BA08B /* RecordCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
