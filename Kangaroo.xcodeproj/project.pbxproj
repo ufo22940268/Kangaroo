@@ -18,6 +18,7 @@
 		42B99BDC22957BE60052D99D /* KangarooUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B99BDB22957BE60052D99D /* KangarooUITests.swift */; };
 		42B99BEA229627500052D99D /* RecordListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B99BE9229627500052D99D /* RecordListViewController.swift */; };
 		42B99BEC2296276A0052D99D /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B99BEB2296276A0052D99D /* Extentions.swift */; };
+		42D20F622296BE4200001C68 /* MainSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D20F612296BE4200001C68 /* MainSplitViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		42B99BDD22957BE60052D99D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42B99BE9229627500052D99D /* RecordListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordListViewController.swift; sourceTree = "<group>"; };
 		42B99BEB2296276A0052D99D /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		42D20F612296BE4200001C68 /* MainSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSplitViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				42B99BEB2296276A0052D99D /* Extentions.swift */,
 				4270B69022965D64001BA08B /* RecordCell.xib */,
 				4270B69222965FBC001BA08B /* RecordCell.swift */,
+				42D20F612296BE4200001C68 /* MainSplitViewController.swift */,
 			);
 			path = Kangaroo;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				42B99BEC2296276A0052D99D /* Extentions.swift in Sources */,
 				42B99BC022957BE40052D99D /* ViewController.swift in Sources */,
 				42B99BEA229627500052D99D /* RecordListViewController.swift in Sources */,
+				42D20F622296BE4200001C68 /* MainSplitViewController.swift in Sources */,
 				4270B69522968027001BA08B /* DetailViewController.swift in Sources */,
 				42B99BBE22957BE40052D99D /* AppDelegate.swift in Sources */,
 				4270B69322965FBC001BA08B /* RecordCell.swift in Sources */,

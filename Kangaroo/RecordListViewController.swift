@@ -22,6 +22,9 @@ class RecordListViewController: NSViewController {
         // Do view setup here.
     }
     
+    @IBAction func onAdd(_ sender: NSButton) {
+        print("add")
+    }
 }
 
 extension RecordListViewController: NSTableViewDataSource {

@@ -701,10 +701,10 @@
             </objects>
             <point key="canvasLocation" x="75" y="250"/>
         </scene>
-        <!--Split View Controller-->
+        <!--Main Split View Controller-->
         <scene sceneID="sxc-kb-Pch">
             <objects>
-                <splitViewController id="En5-wn-PYN" sceneMemberID="viewController">
+                <splitViewController id="En5-wn-PYN" customClass="MainSplitViewController" customModule="Kangaroo" customModuleProvider="target" sceneMemberID="viewController">
                     <splitViewItems>
                         <splitViewItem id="qYS-dS-Fa2"/>
                         <splitViewItem id="CRj-mt-8wU"/>
@@ -746,6 +746,9 @@
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                     <font key="font" metaFont="system"/>
                                                 </buttonCell>
+                                                <connections>
+                                                    <action selector="onAdd:" target="51d-3B-gu7" id="1LP-8U-hOW"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <edgeInsets key="edgeInsets" left="16" right="16" top="4" bottom="4"/>
@@ -756,20 +759,20 @@
                                             <real value="3.4028234663852886e+38"/>
                                         </customSpacing>
                                     </stackView>
-                                    <scrollView autoresizesSubviews="NO" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="68t-8W-vql">
+                                    <scrollView autoresizesSubviews="NO" borderType="none" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="68t-8W-vql">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="414"/>
                                         <clipView key="contentView" id="V3M-eg-fZs">
-                                            <rect key="frame" x="1" y="1" width="198" height="412"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="414"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" usesAutomaticRowHeights="YES" viewBased="YES" id="ZWK-WL-fPb">
-                                                    <rect key="frame" x="0.0" y="0.0" width="198" height="412"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="200" height="414"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <size key="intercellSpacing" width="3" height="2"/>
                                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                     <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                                     <tableColumns>
-                                                        <tableColumn width="195" minWidth="40" maxWidth="1000" id="Z02-AQ-JXa">
+                                                        <tableColumn width="197" minWidth="40" maxWidth="1000" id="Z02-AQ-JXa">
                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
                                                                 <font key="font" metaFont="smallSystem"/>
                                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
