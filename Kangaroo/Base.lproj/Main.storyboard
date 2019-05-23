@@ -731,20 +731,42 @@
             <objects>
                 <viewController id="51d-3B-gu7" customClass="RecordListViewController" customModule="Kangaroo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="Cg5-Ja-lFG">
-                        <rect key="frame" x="0.0" y="0.0" width="200" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="436"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G2j-M6-rfO">
-                                <rect key="frame" x="0.0" y="0.0" width="200" height="300"/>
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="436"/>
                                 <subviews>
+                                    <stackView distribution="fill" orientation="horizontal" alignment="top" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZGH-Ap-VQh">
+                                        <rect key="frame" x="0.0" y="414" width="72" height="22"/>
+                                        <subviews>
+                                            <button verticalHuggingPriority="750" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="abq-pe-IKL">
+                                                <rect key="frame" x="16" y="-1" width="40" height="23"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="QCh-aX-opS"/>
+                                                </constraints>
+                                                <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSAddTemplate" imagePosition="only" alignment="center" state="on" borderStyle="border" inset="2" id="ycS-NM-AXn">
+                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                            </button>
+                                        </subviews>
+                                        <edgeInsets key="edgeInsets" left="16" right="16" top="4" bottom="4"/>
+                                        <visibilityPriorities>
+                                            <integer value="1000"/>
+                                        </visibilityPriorities>
+                                        <customSpacing>
+                                            <real value="3.4028234663852886e+38"/>
+                                        </customSpacing>
+                                    </stackView>
                                     <scrollView autoresizesSubviews="NO" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="68t-8W-vql">
-                                        <rect key="frame" x="0.0" y="0.0" width="200" height="300"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="414"/>
                                         <clipView key="contentView" id="V3M-eg-fZs">
-                                            <rect key="frame" x="1" y="1" width="198" height="298"/>
+                                            <rect key="frame" x="1" y="1" width="198" height="412"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" usesAutomaticRowHeights="YES" viewBased="YES" id="ZWK-WL-fPb">
-                                                    <rect key="frame" x="0.0" y="0.0" width="198" height="298"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="198" height="412"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <size key="intercellSpacing" width="3" height="2"/>
                                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -787,8 +809,10 @@
                                 </constraints>
                                 <visibilityPriorities>
                                     <integer value="1000"/>
+                                    <integer value="1000"/>
                                 </visibilityPriorities>
                                 <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
                                     <real value="3.4028234663852886e+38"/>
                                 </customSpacing>
                             </stackView>
@@ -822,4 +846,7 @@
             <point key="canvasLocation" x="729" y="1322"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="NSAddTemplate" width="11" height="11"/>
+    </resources>
 </document>
