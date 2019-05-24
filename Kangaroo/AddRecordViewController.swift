@@ -10,9 +10,10 @@ import Cocoa
 
 class AddRecordViewController: NSViewController {
 
+    @IBOutlet weak var keyFields: NSStackView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do view setup here.
+        // Do view setup here.        
     }
     
 }

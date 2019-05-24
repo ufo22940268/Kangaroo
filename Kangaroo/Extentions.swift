@@ -24,6 +24,11 @@ extension NSView {
             widthAnchor.constraint(equalTo: superview.widthAnchor),
             heightAnchor.constraint(equalTo: superview.heightAnchor)])
     }
+    
+    func setBackgroundColor(_ color: NSColor) {
+        wantsLayer = true
+        layer?.backgroundColor = color.cgColor
+    }
 }
 
 extension String {
