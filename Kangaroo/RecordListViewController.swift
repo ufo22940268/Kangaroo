@@ -56,3 +56,10 @@ extension RecordListViewController: NSTableViewDelegate {
     }
 }
 
+
+class MyTableView: NSTableView {
+    override func drawGrid(inClipRect clipRect: NSRect) {
+        super.drawGrid(inClipRect: clipRect.insetBy(dx: 100, dy: 0))
+    }
+}
+

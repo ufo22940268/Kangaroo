@@ -33,5 +33,4 @@ class DetailViewController: NSViewController {
         
         mode = .add
     }
-    
 }
