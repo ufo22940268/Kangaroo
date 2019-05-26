@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -61,73 +62,28 @@
                                     <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fgb-aV-vUJ">
                                         <rect key="frame" x="0.0" y="0.0" width="306" height="300"/>
                                         <subviews>
-                                            <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ndc-YU-Sc9">
-                                                <rect key="frame" x="0.0" y="268" width="306" height="32"/>
+                                            <stackView distribution="fill" orientation="horizontal" alignment="centerY" horizontalStackHuggingPriority="250" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DQw-AW-YBJ" userLabel="Host">
+                                                <rect key="frame" x="0.0" y="252" width="306" height="48"/>
                                                 <subviews>
-                                                    <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n1Z-IC-uh5">
-                                                        <rect key="frame" x="0.0" y="16" width="306" height="16"/>
-                                                        <subviews>
-                                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="MLW-Hh-G1F">
-                                                                <rect key="frame" x="18" y="8" width="38" height="0.0"/>
-                                                                <textFieldCell key="cell" lineBreakMode="clipping" title="用户名" id="h3l-Iz-BcC">
-                                                                    <font key="font" metaFont="smallSystem"/>
-                                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                                                </textFieldCell>
-                                                            </textField>
-                                                            <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="way-uX-U3J">
-                                                                <rect key="frame" x="18" y="8" width="96" height="0.0"/>
-                                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" focusRingType="none" placeholderString="new field" id="4yM-tM-7mM">
-                                                                    <font key="font" metaFont="system"/>
-                                                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                                    <color key="backgroundColor" red="1" green="0.731341842393187" blue="0.94435155102975021" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                </textFieldCell>
-                                                            </textField>
-                                                        </subviews>
-                                                        <edgeInsets key="edgeInsets" left="20" right="0.0" top="8" bottom="8"/>
-                                                        <visibilityPriorities>
-                                                            <integer value="1000"/>
-                                                            <integer value="1000"/>
-                                                        </visibilityPriorities>
-                                                        <customSpacing>
-                                                            <real value="3.4028234663852886e+38"/>
-                                                            <real value="3.4028234663852886e+38"/>
-                                                        </customSpacing>
-                                                    </stackView>
-                                                    <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KqO-wU-Swl">
-                                                        <rect key="frame" x="0.0" y="0.0" width="306" height="16"/>
-                                                        <subviews>
-                                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Hui-40-HUg">
-                                                                <rect key="frame" x="18" y="8" width="27" height="0.0"/>
-                                                                <textFieldCell key="cell" lineBreakMode="clipping" title="密码" id="kIT-Uk-XUC">
-                                                                    <font key="font" metaFont="smallSystem"/>
-                                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                                                </textFieldCell>
-                                                            </textField>
-                                                            <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Cxy-FT-b1U">
-                                                                <rect key="frame" x="18" y="8" width="96" height="0.0"/>
-                                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" focusRingType="none" placeholderString="new field" id="PL7-d3-66O">
-                                                                    <font key="font" metaFont="system"/>
-                                                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                                    <color key="backgroundColor" red="1" green="0.7313418424" blue="0.94435155100000001" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                </textFieldCell>
-                                                            </textField>
-                                                        </subviews>
-                                                        <edgeInsets key="edgeInsets" left="20" right="0.0" top="8" bottom="8"/>
-                                                        <visibilityPriorities>
-                                                            <integer value="1000"/>
-                                                            <integer value="1000"/>
-                                                        </visibilityPriorities>
-                                                        <customSpacing>
-                                                            <real value="3.4028234663852886e+38"/>
-                                                            <real value="3.4028234663852886e+38"/>
-                                                        </customSpacing>
-                                                    </stackView>
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="A8l-sP-sZu" customClass="CapitalImageView" customModule="Kangaroo" customModuleProvider="target">
+                                                        <rect key="frame" x="16" y="6" width="36" height="36"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="36" id="sJe-QB-lvN"/>
+                                                            <constraint firstAttribute="width" constant="36" id="zkK-sR-aLf"/>
+                                                        </constraints>
+                                                    </customView>
+                                                    <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bmf-M6-kxh">
+                                                        <rect key="frame" x="58" y="11" width="234" height="27"/>
+                                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" focusRingType="none" placeholderString="example.com" id="gcj-Us-YIU">
+                                                            <font key="font" size="22" name=".AppleSystemUIFont"/>
+                                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="DetailBackground"/>
+                                                        </textFieldCell>
+                                                    </textField>
                                                 </subviews>
+                                                <edgeInsets key="edgeInsets" left="16" right="16" top="0.0" bottom="0.0"/>
                                                 <constraints>
-                                                    <constraint firstItem="n1Z-IC-uh5" firstAttribute="width" secondItem="ndc-YU-Sc9" secondAttribute="width" id="Vsi-ae-4IV"/>
-                                                    <constraint firstItem="KqO-wU-Swl" firstAttribute="width" secondItem="ndc-YU-Sc9" secondAttribute="width" id="oHg-az-iLu"/>
+                                                    <constraint firstAttribute="height" constant="48" id="J0X-1z-N5c"/>
                                                 </constraints>
                                                 <visibilityPriorities>
                                                     <integer value="1000"/>
@@ -138,18 +94,120 @@
                                                     <real value="3.4028234663852886e+38"/>
                                                 </customSpacing>
                                             </stackView>
+                                            <box autoresizesSubviews="NO" boxType="custom" borderType="line" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="uoL-Mk-UaR">
+                                                <rect key="frame" x="0.0" y="158" width="306" height="94"/>
+                                                <view key="contentView" id="iaP-vS-tG1">
+                                                    <rect key="frame" x="1" y="1" width="304" height="92"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <subviews>
+                                                        <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ndc-YU-Sc9">
+                                                            <rect key="frame" x="0.0" y="-2" width="304" height="94"/>
+                                                            <subviews>
+                                                                <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n1Z-IC-uh5">
+                                                                    <rect key="frame" x="0.0" y="47" width="304" height="47"/>
+                                                                    <subviews>
+                                                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="MLW-Hh-G1F">
+                                                                            <rect key="frame" x="18" y="25" width="38" height="14"/>
+                                                                            <textFieldCell key="cell" lineBreakMode="clipping" title="用户名" id="h3l-Iz-BcC">
+                                                                                <font key="font" metaFont="smallSystem"/>
+                                                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                                            </textFieldCell>
+                                                                        </textField>
+                                                                        <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="way-uX-U3J">
+                                                                            <rect key="frame" x="18" y="8" width="96" height="17"/>
+                                                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" focusRingType="none" placeholderString="new field" id="4yM-tM-7mM">
+                                                                                <font key="font" metaFont="system"/>
+                                                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                                                <color key="backgroundColor" red="1" green="0.731341842393187" blue="0.94435155102975021" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            </textFieldCell>
+                                                                        </textField>
+                                                                    </subviews>
+                                                                    <edgeInsets key="edgeInsets" left="20" right="0.0" top="8" bottom="8"/>
+                                                                    <visibilityPriorities>
+                                                                        <integer value="1000"/>
+                                                                        <integer value="1000"/>
+                                                                    </visibilityPriorities>
+                                                                    <customSpacing>
+                                                                        <real value="3.4028234663852886e+38"/>
+                                                                        <real value="3.4028234663852886e+38"/>
+                                                                    </customSpacing>
+                                                                </stackView>
+                                                                <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KqO-wU-Swl">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="304" height="47"/>
+                                                                    <subviews>
+                                                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Hui-40-HUg">
+                                                                            <rect key="frame" x="18" y="25" width="27" height="14"/>
+                                                                            <textFieldCell key="cell" lineBreakMode="clipping" title="密码" id="kIT-Uk-XUC">
+                                                                                <font key="font" metaFont="smallSystem"/>
+                                                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                                            </textFieldCell>
+                                                                        </textField>
+                                                                        <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Cxy-FT-b1U">
+                                                                            <rect key="frame" x="18" y="8" width="96" height="17"/>
+                                                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" focusRingType="none" placeholderString="new field" id="PL7-d3-66O">
+                                                                                <font key="font" metaFont="system"/>
+                                                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                                                <color key="backgroundColor" red="1" green="0.7313418424" blue="0.94435155100000001" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            </textFieldCell>
+                                                                        </textField>
+                                                                    </subviews>
+                                                                    <edgeInsets key="edgeInsets" left="20" right="0.0" top="8" bottom="8"/>
+                                                                    <visibilityPriorities>
+                                                                        <integer value="1000"/>
+                                                                        <integer value="1000"/>
+                                                                    </visibilityPriorities>
+                                                                    <customSpacing>
+                                                                        <real value="3.4028234663852886e+38"/>
+                                                                        <real value="3.4028234663852886e+38"/>
+                                                                    </customSpacing>
+                                                                </stackView>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="n1Z-IC-uh5" firstAttribute="width" secondItem="ndc-YU-Sc9" secondAttribute="width" id="Vsi-ae-4IV"/>
+                                                                <constraint firstItem="KqO-wU-Swl" firstAttribute="width" secondItem="ndc-YU-Sc9" secondAttribute="width" id="oHg-az-iLu"/>
+                                                            </constraints>
+                                                            <visibilityPriorities>
+                                                                <integer value="1000"/>
+                                                                <integer value="1000"/>
+                                                            </visibilityPriorities>
+                                                            <customSpacing>
+                                                                <real value="3.4028234663852886e+38"/>
+                                                                <real value="3.4028234663852886e+38"/>
+                                                            </customSpacing>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="ndc-YU-Sc9" firstAttribute="top" secondItem="iaP-vS-tG1" secondAttribute="top" id="euh-Kb-MCq"/>
+                                                        <constraint firstItem="ndc-YU-Sc9" firstAttribute="width" secondItem="iaP-vS-tG1" secondAttribute="width" id="huf-lu-xzH"/>
+                                                        <constraint firstItem="ndc-YU-Sc9" firstAttribute="leading" secondItem="iaP-vS-tG1" secondAttribute="leading" id="tcy-RN-Njk"/>
+                                                    </constraints>
+                                                </view>
+                                                <constraints>
+                                                    <constraint firstItem="ndc-YU-Sc9" firstAttribute="height" secondItem="uoL-Mk-UaR" secondAttribute="height" id="Lu6-he-V7O"/>
+                                                </constraints>
+                                                <color key="borderColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="fillColor" name="DetailPrimaryBackground"/>
+                                                <font key="titleFont" metaFont="smallSystem"/>
+                                            </box>
                                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="si3-uG-THe">
-                                                <rect key="frame" x="0.0" y="0.0" width="163" height="268"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="163" height="158"/>
                                             </customView>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="ndc-YU-Sc9" firstAttribute="width" secondItem="Fgb-aV-vUJ" secondAttribute="width" id="dIL-Ag-1pU"/>
+                                            <constraint firstItem="DQw-AW-YBJ" firstAttribute="width" secondItem="Fgb-aV-vUJ" secondAttribute="width" id="MQm-oF-kds"/>
+                                            <constraint firstItem="uoL-Mk-UaR" firstAttribute="width" secondItem="Fgb-aV-vUJ" secondAttribute="width" id="Nop-bQ-r0N"/>
+                                            <constraint firstItem="DQw-AW-YBJ" firstAttribute="leading" secondItem="Fgb-aV-vUJ" secondAttribute="leading" id="aQH-dm-fbN"/>
+                                            <constraint firstItem="uoL-Mk-UaR" firstAttribute="leading" secondItem="Fgb-aV-vUJ" secondAttribute="leading" id="mNt-KX-fH1"/>
                                         </constraints>
                                         <visibilityPriorities>
                                             <integer value="1000"/>
                                             <integer value="1000"/>
+                                            <integer value="1000"/>
                                         </visibilityPriorities>
                                         <customSpacing>
+                                            <real value="3.4028234663852886e+38"/>
                                             <real value="3.4028234663852886e+38"/>
                                             <real value="3.4028234663852886e+38"/>
                                         </customSpacing>
@@ -166,7 +224,8 @@
                                 <constraint firstAttribute="height" constant="300" id="p8b-J8-Kb1"/>
                             </constraints>
                             <color key="borderColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                            <color key="fillColor" name="windowBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            <color key="fillColor" name="DetailBackground"/>
+                            <font key="titleFont" metaFont="smallSystem"/>
                         </box>
                     </subviews>
                     <constraints>
@@ -192,4 +251,12 @@
             <point key="canvasLocation" x="118" y="108"/>
         </customView>
     </objects>
+    <resources>
+        <namedColor name="DetailBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="DetailPrimaryBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

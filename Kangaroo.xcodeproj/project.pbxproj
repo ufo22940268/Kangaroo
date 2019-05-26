@@ -10,6 +10,7 @@
 		4270B69122965D64001BA08B /* RecordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4270B69022965D64001BA08B /* RecordCell.xib */; };
 		4270B69322965FBC001BA08B /* RecordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4270B69222965FBC001BA08B /* RecordCell.swift */; };
 		4270B69522968027001BA08B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4270B69422968027001BA08B /* DetailViewController.swift */; };
+		4275900A2297E11F0009C225 /* CapitalImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427590092297E11F0009C225 /* CapitalImageView.swift */; };
 		42B99BBE22957BE40052D99D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B99BBD22957BE40052D99D /* AppDelegate.swift */; };
 		42B99BC022957BE40052D99D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B99BBF22957BE40052D99D /* ViewController.swift */; };
 		42B99BC222957BE60052D99D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42B99BC122957BE60052D99D /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 		4270B69022965D64001BA08B /* RecordCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecordCell.xib; sourceTree = "<group>"; };
 		4270B69222965FBC001BA08B /* RecordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordCell.swift; sourceTree = "<group>"; };
 		4270B69422968027001BA08B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		427590092297E11F0009C225 /* CapitalImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapitalImageView.swift; sourceTree = "<group>"; };
 		42B99BBA22957BE40052D99D /* Kangaroo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kangaroo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42B99BBD22957BE40052D99D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42B99BBF22957BE40052D99D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				42D20F652297579D00001C68 /* AddRecordViewController.xib */,
 				42D20F672297581900001C68 /* Test.swift */,
 				42D20F682297581900001C68 /* Test.xib */,
+				427590092297E11F0009C225 /* CapitalImageView.swift */,
 			);
 			path = Kangaroo;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 				42B99BBE22957BE40052D99D /* AppDelegate.swift in Sources */,
 				4270B69322965FBC001BA08B /* RecordCell.swift in Sources */,
 				42D20F642297576500001C68 /* AddRecordViewController.swift in Sources */,
+				4275900A2297E11F0009C225 /* CapitalImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
