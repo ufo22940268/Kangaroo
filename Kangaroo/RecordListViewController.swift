@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import RealmSwift
 
 protocol RecordListViewControllerDelegate: class {
     func addRecord()
@@ -21,10 +22,19 @@ class RecordListViewController: NSViewController {
     }
 
     weak var splitDelegate: RecordListViewControllerDelegate?
+    lazy var realm: Realm = {
+       return try! Realm()
+    }()
+    var records: Results<Record>?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
+        loadData()
+    }
+    
+    func loadData() {
+        records = realm.objects(Record.self)
     }
     
     @IBAction func onAdd(_ sender: NSButton) {
@@ -34,11 +44,8 @@ class RecordListViewController: NSViewController {
 
 extension RecordListViewController: NSTableViewDataSource {
     func numberOfRows(in tableView: NSTableView) -> Int {
-        return 3
-    }
-    
-    func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any? {
-        return "adfasdfij"
+        guard let records = records, records.count > 0 else { return 0}
+        return records.count
     }
 }
 
@@ -46,7 +53,9 @@ extension RecordListViewController: NSTableViewDelegate {
     
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
         let view = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier("cell"), owner: nil) as! RecordCell
-        view.title.stringValue = "jiji"
+        let record = records![row]
+        view.title.stringValue = record.host
+        view.subtitle.stringValue = record.createdDate.format
         return view
     }
         

@@ -11,10 +11,11 @@ import Cocoa
 class RecordCell: NSTableCellView {
 
     @IBOutlet weak var title: NSTextField!
+    @IBOutlet weak var subtitle: NSTextFieldCell!
     
     override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)
-
+        
         // Drawing code here.
     }
     

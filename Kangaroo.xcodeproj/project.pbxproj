@@ -10,6 +10,11 @@
 		4270B69122965D64001BA08B /* RecordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4270B69022965D64001BA08B /* RecordCell.xib */; };
 		4270B69322965FBC001BA08B /* RecordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4270B69222965FBC001BA08B /* RecordCell.swift */; };
 		4270B69522968027001BA08B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4270B69422968027001BA08B /* DetailViewController.swift */; };
+		42750A7B229B866C00588A75 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42750A7A229B866C00588A75 /* Record.swift */; };
+		42750A84229B8A6600588A75 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42750A82229B8A6600588A75 /* RealmSwift.framework */; };
+		42750A85229B8A6600588A75 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42750A82229B8A6600588A75 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		42750A86229B8A6600588A75 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42750A83229B8A6600588A75 /* Realm.framework */; };
+		42750A87229B8A6600588A75 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42750A83229B8A6600588A75 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4275900A2297E11F0009C225 /* CapitalImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427590092297E11F0009C225 /* CapitalImageView.swift */; };
 		42B99BBE22957BE40052D99D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B99BBD22957BE40052D99D /* AppDelegate.swift */; };
 		42B99BC022957BE40052D99D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B99BBF22957BE40052D99D /* ViewController.swift */; };
@@ -43,10 +48,30 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		42750A88229B8A6600588A75 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				42750A87229B8A6600588A75 /* Realm.framework in Embed Frameworks */,
+				42750A85229B8A6600588A75 /* RealmSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		4270B69022965D64001BA08B /* RecordCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecordCell.xib; sourceTree = "<group>"; };
 		4270B69222965FBC001BA08B /* RecordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordCell.swift; sourceTree = "<group>"; };
 		4270B69422968027001BA08B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		42750A7A229B866C00588A75 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		42750A7E229B8A5100588A75 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/Mac/Realm.framework; sourceTree = "<group>"; };
+		42750A80229B8A5300588A75 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/Mac/RealmSwift.framework; sourceTree = "<group>"; };
+		42750A82229B8A6600588A75 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/Mac/RealmSwift.framework; sourceTree = "<group>"; };
+		42750A83229B8A6600588A75 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/Mac/Realm.framework; sourceTree = "<group>"; };
 		427590092297E11F0009C225 /* CapitalImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapitalImageView.swift; sourceTree = "<group>"; };
 		42B99BBA22957BE40052D99D /* Kangaroo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kangaroo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42B99BBD22957BE40052D99D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +100,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42750A86229B8A6600588A75 /* Realm.framework in Frameworks */,
+				42750A84229B8A6600588A75 /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,13 +122,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42750A7D229B8A5100588A75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42750A80229B8A5300588A75 /* RealmSwift.framework */,
+				42750A7E229B8A5100588A75 /* Realm.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		42B99BB122957BE40052D99D = {
 			isa = PBXGroup;
 			children = (
+				42750A83229B8A6600588A75 /* Realm.framework */,
+				42750A82229B8A6600588A75 /* RealmSwift.framework */,
 				42B99BBC22957BE40052D99D /* Kangaroo */,
 				42B99BCF22957BE60052D99D /* KangarooTests */,
 				42B99BDA22957BE60052D99D /* KangarooUITests */,
 				42B99BBB22957BE40052D99D /* Products */,
+				42750A7D229B8A5100588A75 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,6 +174,7 @@
 				42D20F672297581900001C68 /* Test.swift */,
 				42D20F682297581900001C68 /* Test.xib */,
 				427590092297E11F0009C225 /* CapitalImageView.swift */,
+				42750A7A229B866C00588A75 /* Record.swift */,
 			);
 			path = Kangaroo;
 			sourceTree = "<group>";
@@ -167,6 +207,7 @@
 				42B99BB622957BE40052D99D /* Sources */,
 				42B99BB722957BE40052D99D /* Frameworks */,
 				42B99BB822957BE40052D99D /* Resources */,
+				42750A88229B8A6600588A75 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -296,6 +337,7 @@
 				42B99BEA229627500052D99D /* RecordListViewController.swift in Sources */,
 				42D20F622296BE4200001C68 /* MainSplitViewController.swift in Sources */,
 				4270B69522968027001BA08B /* DetailViewController.swift in Sources */,
+				42750A7B229B866C00588A75 /* Record.swift in Sources */,
 				42B99BBE22957BE40052D99D /* AppDelegate.swift in Sources */,
 				4270B69322965FBC001BA08B /* RecordCell.swift in Sources */,
 				42D20F642297576500001C68 /* AddRecordViewController.swift in Sources */,
@@ -469,6 +511,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = S833P2K5YV;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = Kangaroo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -488,6 +534,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = S833P2K5YV;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = Kangaroo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

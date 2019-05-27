@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import RealmSwift
 
 class BorderBox: NSBox {
     override func draw(_ dirtyRect: NSRect) {
@@ -32,9 +33,12 @@ class AddRecordViewController: NSViewController {
     @IBOutlet weak var usernameField: NSTextField!
     @IBOutlet weak var passwordField: NSTextField!
     
+    lazy var realm: Realm = {
+       return try! Realm()
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do view setup here.        
     }
     
     func isAllFieldsValid() -> Bool {
@@ -44,6 +48,21 @@ class AddRecordViewController: NSViewController {
         }
 
         return hostField.stringValue.isURL()
+    }
+    
+    @IBAction func onSave(_ sender: Any) {
+        print("onSave")
+        let host = hostField.stringValue
+        let username = usernameField.stringValue
+        let password = passwordField.stringValue
+        
+        let record = Record()
+        record.host = host
+        record.username = username
+        record.password = password
+        try! realm.write {
+            realm.add(record)
+        }
     }
 }
 

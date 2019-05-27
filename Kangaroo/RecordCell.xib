@@ -71,6 +71,8 @@
                 <constraint firstAttribute="trailing" secondItem="l4g-wz-NyX" secondAttribute="trailing" constant="155" id="Y2h-02-dEq"/>
             </constraints>
             <connections>
+                <outlet property="subTitle" destination="tfe-Iu-oaU" id="CRU-5X-9pr"/>
+                <outlet property="subtitle" destination="tfe-Iu-oaU" id="lnh-XA-vNb"/>
                 <outlet property="title" destination="QeR-xQ-24q" id="ndG-ZN-AIY"/>
             </connections>
             <point key="canvasLocation" x="96" y="10"/>
