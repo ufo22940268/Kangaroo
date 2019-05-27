@@ -56,7 +56,7 @@ extension RecordListViewController: NSTableViewDelegate {
         let view = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier("cell"), owner: nil) as! RecordCell
         let record = records![row]
         view.title.stringValue = record.host
-        view.subtitle.stringValue = record.createdDate.format
+        view.subtitle.stringValue = record.username
         view.capital.capital = String(record.host.first!)
         return view
     }
