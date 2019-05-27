@@ -9,6 +9,10 @@
 import Cocoa
 import RealmSwift
 
+protocol AddRecordViewControllerDelegate: class {
+    func onCommitAddRecord()
+}
+
 class BorderBox: NSBox {
     override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)
@@ -37,6 +41,8 @@ class AddRecordViewController: NSViewController {
        return try! Realm()
     }()
     
+    weak var delegate: AddRecordViewControllerDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -51,7 +57,6 @@ class AddRecordViewController: NSViewController {
     }
     
     @IBAction func onSave(_ sender: Any) {
-        print("onSave")
         let host = hostField.stringValue
         let username = usernameField.stringValue
         let password = passwordField.stringValue
@@ -63,6 +68,8 @@ class AddRecordViewController: NSViewController {
         try! realm.write {
             realm.add(record)
         }
+        
+        delegate?.onCommitAddRecord()
     }
 }
 

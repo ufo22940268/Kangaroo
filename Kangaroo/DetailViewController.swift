@@ -8,17 +8,21 @@
 
 import Cocoa
 
+typealias DetailSplitDelegate = AddRecordViewControllerDelegate
+
 class DetailViewController: NSViewController {
     
     enum Mode {
         case add
     }
     
+    weak var splitDelegate: DetailSplitDelegate?
     
     var mode: Mode! {
         didSet {
             if oldValue == nil {
                 let vc = AddRecordViewController(nibName: "AddRecordViewController", bundle: nil)
+                vc.delegate = splitDelegate
                 addChild(vc)
                 
                 view.addSubview(vc.view.useAutolayout())
@@ -29,8 +33,5 @@ class DetailViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do view setup here.
-        
-        mode = .add
     }
 }

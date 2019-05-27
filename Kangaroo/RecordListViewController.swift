@@ -34,7 +34,8 @@ class RecordListViewController: NSViewController {
     }
     
     func loadData() {
-        records = realm.objects(Record.self)
+        records = realm.objects(Record.self).sorted(byKeyPath: "createdDate", ascending: false)
+        tableView.reloadData()
     }
     
     @IBAction func onAdd(_ sender: NSButton) {
@@ -56,6 +57,7 @@ extension RecordListViewController: NSTableViewDelegate {
         let record = records![row]
         view.title.stringValue = record.host
         view.subtitle.stringValue = record.createdDate.format
+        view.capital.capital = String(record.host.first!)
         return view
     }
         

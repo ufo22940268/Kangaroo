@@ -12,6 +12,7 @@ class RecordCell: NSTableCellView {
 
     @IBOutlet weak var title: NSTextField!
     @IBOutlet weak var subtitle: NSTextFieldCell!
+    @IBOutlet weak var capital: CapitalImageView!
     
     override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)

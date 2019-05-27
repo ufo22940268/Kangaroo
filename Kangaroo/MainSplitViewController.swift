@@ -25,11 +25,20 @@ class MainSplitViewController: NSSplitViewController {
         super.viewDidLoad()
         
         recordListVC.splitDelegate = self
+        detailVC.splitDelegate = self
+        
+        detailVC.mode = .add
     }
 }
 
 extension MainSplitViewController: RecordListViewControllerDelegate {
     func addRecord() {
         detailVC.mode = .add
+    }
+}
+
+extension MainSplitViewController: DetailSplitDelegate {
+    func onCommitAddRecord() {
+        recordListVC.loadData()
     }
 }
