@@ -8,7 +8,11 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="AddRecordViewController" customModule="Kangaroo" customModuleProvider="target">
             <connections>
+                <outlet property="hostField" destination="bmf-M6-kxh" id="X3o-Qc-NTz"/>
                 <outlet property="keyFields" destination="ndc-YU-Sc9" id="D5x-bu-pxi"/>
+                <outlet property="passwordField" destination="Cxy-FT-b1U" id="ESR-Yj-SWq"/>
+                <outlet property="saveButton" destination="68I-sL-UM7" id="oO0-TR-QaJ"/>
+                <outlet property="usernameField" destination="way-uX-U3J" id="UdC-OC-ka3"/>
                 <outlet property="view" destination="c22-O7-iKe" id="XJS-ie-MGC"/>
             </connections>
         </customObject>
@@ -26,7 +30,7 @@
                             <subviews>
                                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="68I-sL-UM7">
                                     <rect key="frame" x="2" y="-1" width="67" height="32"/>
-                                    <buttonCell key="cell" type="push" title="保存" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="eoF-IY-UaT">
+                                    <buttonCell key="cell" type="push" title="保存" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="eoF-IY-UaT">
                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                         <font key="font" metaFont="system"/>
                                     </buttonCell>
@@ -63,27 +67,30 @@
                                         <rect key="frame" x="0.0" y="0.0" width="306" height="300"/>
                                         <subviews>
                                             <stackView distribution="fill" orientation="horizontal" alignment="centerY" horizontalStackHuggingPriority="250" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DQw-AW-YBJ" userLabel="Host">
-                                                <rect key="frame" x="0.0" y="252" width="306" height="48"/>
+                                                <rect key="frame" x="0.0" y="230" width="306" height="70"/>
                                                 <subviews>
                                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="A8l-sP-sZu" customClass="CapitalImageView" customModule="Kangaroo" customModuleProvider="target">
-                                                        <rect key="frame" x="16" y="6" width="36" height="36"/>
+                                                        <rect key="frame" x="16" y="17" width="36" height="36"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="36" id="sJe-QB-lvN"/>
                                                             <constraint firstAttribute="width" constant="36" id="zkK-sR-aLf"/>
                                                         </constraints>
                                                     </customView>
                                                     <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bmf-M6-kxh">
-                                                        <rect key="frame" x="58" y="11" width="234" height="27"/>
+                                                        <rect key="frame" x="58" y="22" width="234" height="27"/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" focusRingType="none" placeholderString="example.com" id="gcj-Us-YIU">
                                                             <font key="font" size="22" name=".AppleSystemUIFont"/>
                                                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                             <color key="backgroundColor" name="DetailBackground"/>
                                                         </textFieldCell>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="-2" id="M1m-q9-lLA"/>
+                                                        </connections>
                                                     </textField>
                                                 </subviews>
                                                 <edgeInsets key="edgeInsets" left="16" right="16" top="0.0" bottom="0.0"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="48" id="J0X-1z-N5c"/>
+                                                    <constraint firstAttribute="height" constant="70" id="J0X-1z-N5c"/>
                                                 </constraints>
                                                 <visibilityPriorities>
                                                     <integer value="1000"/>
@@ -95,7 +102,7 @@
                                                 </customSpacing>
                                             </stackView>
                                             <box autoresizesSubviews="NO" boxType="custom" borderType="line" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="uoL-Mk-UaR" customClass="BorderBox" customModule="Kangaroo" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="158" width="306" height="94"/>
+                                                <rect key="frame" x="0.0" y="136" width="306" height="94"/>
                                                 <view key="contentView" id="iaP-vS-tG1">
                                                     <rect key="frame" x="0.0" y="0.0" width="306" height="94"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -121,6 +128,9 @@
                                                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                                 <color key="backgroundColor" red="1" green="0.731341842393187" blue="0.94435155102975021" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             </textFieldCell>
+                                                                            <connections>
+                                                                                <outlet property="delegate" destination="-2" id="Flk-t2-KVI"/>
+                                                                            </connections>
                                                                         </textField>
                                                                     </subviews>
                                                                     <edgeInsets key="edgeInsets" left="20" right="0.0" top="8" bottom="8"/>
@@ -151,6 +161,9 @@
                                                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                                 <color key="backgroundColor" red="1" green="0.7313418424" blue="0.94435155100000001" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             </textFieldCell>
+                                                                            <connections>
+                                                                                <outlet property="delegate" destination="-2" id="rCl-Yq-bcT"/>
+                                                                            </connections>
                                                                         </textField>
                                                                     </subviews>
                                                                     <edgeInsets key="edgeInsets" left="20" right="0.0" top="8" bottom="8"/>
@@ -191,7 +204,7 @@
                                                 <color key="fillColor" name="DetailPrimaryBackground"/>
                                             </box>
                                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="si3-uG-THe">
-                                                <rect key="frame" x="0.0" y="0.0" width="163" height="158"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="163" height="136"/>
                                             </customView>
                                         </subviews>
                                         <constraints>

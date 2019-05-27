@@ -25,10 +25,31 @@ class BorderBox: NSBox {
 
 class AddRecordViewController: NSViewController {
 
+    @IBOutlet weak var saveButton: NSButton!
     @IBOutlet weak var keyFields: NSStackView!
+    
+    @IBOutlet weak var hostField: NSTextField!
+    @IBOutlet weak var usernameField: NSTextField!
+    @IBOutlet weak var passwordField: NSTextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.        
     }
     
+    func isAllFieldsValid() -> Bool {
+        let fields: [NSTextField] = [hostField, usernameField, passwordField]
+        guard (fields.allSatisfy { $0.stringValue.count > 0 }) else {
+            return false
+        }
+
+        return hostField.stringValue.isURL()
+    }
+}
+
+extension AddRecordViewController: NSTextFieldDelegate {
+
+    func controlTextDidChange(_ obj: Notification) {
+        saveButton.isEnabled = isAllFieldsValid()
+    }
 }
