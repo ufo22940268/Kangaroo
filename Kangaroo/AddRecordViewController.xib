@@ -53,7 +53,7 @@
                                 <real value="3.4028234663852886e+38"/>
                             </customSpacing>
                         </stackView>
-                        <box autoresizesSubviews="NO" boxType="custom" borderType="none" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="FBM-vZ-lIz">
+                        <box autoresizesSubviews="NO" boxType="custom" borderType="none" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="FBM-vZ-lIz">
                             <rect key="frame" x="0.0" y="0.0" width="306" height="300"/>
                             <view key="contentView" id="THN-EH-jpu">
                                 <rect key="frame" x="0.0" y="0.0" width="306" height="300"/>
@@ -94,17 +94,17 @@
                                                     <real value="3.4028234663852886e+38"/>
                                                 </customSpacing>
                                             </stackView>
-                                            <box autoresizesSubviews="NO" boxType="custom" borderType="line" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="uoL-Mk-UaR">
+                                            <box autoresizesSubviews="NO" boxType="custom" borderType="line" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="uoL-Mk-UaR" customClass="BorderBox" customModule="Kangaroo" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="158" width="306" height="94"/>
                                                 <view key="contentView" id="iaP-vS-tG1">
-                                                    <rect key="frame" x="1" y="1" width="304" height="92"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="306" height="94"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
                                                         <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ndc-YU-Sc9">
-                                                            <rect key="frame" x="0.0" y="-2" width="304" height="94"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="306" height="94"/>
                                                             <subviews>
                                                                 <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n1Z-IC-uh5">
-                                                                    <rect key="frame" x="0.0" y="47" width="304" height="47"/>
+                                                                    <rect key="frame" x="0.0" y="47" width="306" height="47"/>
                                                                     <subviews>
                                                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="MLW-Hh-G1F">
                                                                             <rect key="frame" x="18" y="25" width="38" height="14"/>
@@ -134,7 +134,7 @@
                                                                     </customSpacing>
                                                                 </stackView>
                                                                 <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KqO-wU-Swl">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="304" height="47"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="306" height="47"/>
                                                                     <subviews>
                                                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Hui-40-HUg">
                                                                             <rect key="frame" x="18" y="25" width="27" height="14"/>
@@ -189,7 +189,6 @@
                                                 </constraints>
                                                 <color key="borderColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="fillColor" name="DetailPrimaryBackground"/>
-                                                <font key="titleFont" metaFont="smallSystem"/>
                                             </box>
                                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="si3-uG-THe">
                                                 <rect key="frame" x="0.0" y="0.0" width="163" height="158"/>
@@ -223,9 +222,8 @@
                             <constraints>
                                 <constraint firstAttribute="height" constant="300" id="p8b-J8-Kb1"/>
                             </constraints>
-                            <color key="borderColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="borderColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
                             <color key="fillColor" name="DetailBackground"/>
-                            <font key="titleFont" metaFont="smallSystem"/>
                         </box>
                     </subviews>
                     <constraints>
