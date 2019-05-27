@@ -11,28 +11,48 @@
         <customView autoresizesSubviews="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c22-O7-iKe" customClass="RecordCell" customModule="Kangaroo" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="480" height="54"/>
             <subviews>
-                <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="4" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2RZ-iK-30S">
-                    <rect key="frame" x="20" y="8" width="440" height="38"/>
+                <stackView distribution="fill" orientation="horizontal" alignment="centerY" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l4g-wz-NyX">
+                    <rect key="frame" x="20" y="8" width="305" height="38"/>
                     <subviews>
-                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QeR-xQ-24q">
-                            <rect key="frame" x="-2" y="21" width="269" height="17"/>
+                        <customView translatesAutoresizingMaskIntoConstraints="NO" id="3Wj-h0-hfU" customClass="CapitalImageView" customModule="Kangaroo" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="3" width="32" height="32"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="265" id="0IZ-AP-NO4"/>
+                                <constraint firstAttribute="width" constant="32" id="HdI-M5-NjU"/>
+                                <constraint firstAttribute="height" constant="32" id="Lgc-Jd-rWA"/>
                             </constraints>
-                            <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="EkY-K7-s3o">
-                                <font key="font" usesAppearanceFont="YES"/>
-                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                            </textFieldCell>
-                        </textField>
-                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2RU-kg-9Fd" userLabel="SubTitle">
-                            <rect key="frame" x="-2" y="0.0" width="61" height="17"/>
-                            <textFieldCell key="cell" lineBreakMode="clipping" title="SubLabel" id="tfe-Iu-oaU">
-                                <font key="font" metaFont="system"/>
-                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                            </textFieldCell>
-                        </textField>
+                        </customView>
+                        <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="4" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2RZ-iK-30S">
+                            <rect key="frame" x="40" y="0.0" width="265" height="38"/>
+                            <subviews>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QeR-xQ-24q">
+                                    <rect key="frame" x="-2" y="21" width="269" height="17"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="265" id="0IZ-AP-NO4"/>
+                                    </constraints>
+                                    <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="EkY-K7-s3o">
+                                        <font key="font" usesAppearanceFont="YES"/>
+                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2RU-kg-9Fd" userLabel="SubTitle">
+                                    <rect key="frame" x="-2" y="0.0" width="61" height="17"/>
+                                    <textFieldCell key="cell" lineBreakMode="clipping" title="SubLabel" id="tfe-Iu-oaU">
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                            </subviews>
+                            <visibilityPriorities>
+                                <integer value="1000"/>
+                                <integer value="1000"/>
+                            </visibilityPriorities>
+                            <customSpacing>
+                                <real value="3.4028234663852886e+38"/>
+                                <real value="3.4028234663852886e+38"/>
+                            </customSpacing>
+                        </stackView>
                     </subviews>
                     <visibilityPriorities>
                         <integer value="1000"/>
@@ -45,15 +65,15 @@
                 </stackView>
             </subviews>
             <constraints>
-                <constraint firstItem="2RZ-iK-30S" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="20" symbolic="YES" id="InK-zo-Z7U"/>
-                <constraint firstAttribute="trailing" secondItem="2RZ-iK-30S" secondAttribute="trailing" constant="20" symbolic="YES" id="YXJ-FI-NoZ"/>
-                <constraint firstItem="2RZ-iK-30S" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="8" id="jg1-Pz-qA9"/>
-                <constraint firstAttribute="bottom" secondItem="2RZ-iK-30S" secondAttribute="bottom" constant="8" id="nFp-Ia-9Jx"/>
+                <constraint firstAttribute="bottom" secondItem="l4g-wz-NyX" secondAttribute="bottom" constant="8" id="Nig-PO-cNo"/>
+                <constraint firstItem="l4g-wz-NyX" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="8" id="RhL-ad-qB4"/>
+                <constraint firstItem="l4g-wz-NyX" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="20" id="Xsu-S4-mUK"/>
+                <constraint firstAttribute="trailing" secondItem="l4g-wz-NyX" secondAttribute="trailing" constant="155" id="Y2h-02-dEq"/>
             </constraints>
             <connections>
                 <outlet property="title" destination="QeR-xQ-24q" id="ndG-ZN-AIY"/>
             </connections>
-            <point key="canvasLocation" x="121" y="20"/>
+            <point key="canvasLocation" x="96" y="10"/>
         </customView>
     </objects>
 </document>
